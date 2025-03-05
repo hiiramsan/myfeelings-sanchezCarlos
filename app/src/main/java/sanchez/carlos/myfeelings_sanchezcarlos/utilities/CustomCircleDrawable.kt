@@ -38,7 +38,7 @@ class CustomCircleDrawable: Drawable {
         coordenadas = RectF(25.0f, 25.0f, ancho, alto)
         p0.drawArc(coordenadas!!, 0.0f, 360.0f, false, fondo)
 
-        if (emociones.size == 0) {
+        if (emociones.size != 0) {
             for (e in emociones) {
                 val degree: Float = (e.porcentaje * 360) / 100
                 this.anguloBarrido = degree
